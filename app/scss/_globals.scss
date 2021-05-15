@@ -1,0 +1,96 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.9375rem;
+
+}
+
+
+a,p{
+    font-weight: 400;
+    font-family: $fontLexDec;
+}
+a{
+    text-decoration: none;
+} 
+p{
+    line-height: 1.3;
+    font-size: 0.875rem;
+    
+}
+
+
+
+.container{
+    padding: 5.625rem 1.5rem;  
+
+    @include breakpoint-up(large){
+        padding: 9.5rem 14.5rem;
+    }
+} 
+
+.orange{
+    background-color: $brightOrange;
+
+    a{
+        color: $brightOrange
+    }
+
+    .button:hover{
+        background-color: $brightOrange;
+
+    }
+}
+
+.darkcyan{
+    background-color: $darkCyan;
+
+    a{
+        color: $darkCyan;
+    }
+
+    .button:hover{
+        background-color: $darkCyan;
+    }
+}
+
+.verydarkcyan{
+    background-color: $veryDarkCyan;
+
+    a{
+        color: $veryDarkCyan;
+    }
+    .button:hover{
+        background-color: $veryDarkCyan;
+    }
+}
+
+.button{
+    font-size: 0.8125rem;
+
+    width: fit-content;
+    padding: 1rem 1.9375rem;
+    background-color: white;
+
+    border: 2px $veryLightGray solid;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    &:hover{
+        color: $veryLightGray;
+    }
+}
+

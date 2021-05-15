@@ -1,0 +1,88 @@
+.cards{
+}
+
+.card{
+    background-color: $veryLightGray;
+    text-align: start;
+    width: fit-content;
+    margin: auto;
+
+    @include breakpoint-up(large){   
+        margin-top: 60px;
+    }
+
+    
+
+    &__grid{
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(3, 1fr);
+            
+        }
+    }
+
+    &__item{
+        min-height: 27.6875rem;
+        margin: auto;
+
+        padding: 3rem 3rem 4.125rem 3rem;
+
+        @include breakpoint-up(medium){
+            margin: 0;
+            max-width: 17.125rem;
+        }
+
+        @include breakpoint-up(large){
+            margin: 0;
+            max-width: 17.125rem;
+        }
+
+    }
+
+    &__logo{
+        height: 2.5625rem;
+        margin-bottom: 2.625rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 2.375rem; 
+        }
+
+    }
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+
+        color: $veryLightGray;
+
+        font-family: $fontBigDisp;
+        font-weight: 700;
+        font-size: 2.1875rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 2.125rem;
+            font-size: 1.9375rem;
+        }
+
+    }
+
+    &__paragraph{
+        margin-top: 0;
+        margin-bottom: 1.8125rem;
+
+        color: $transWhite;
+
+        @include breakpoint-up(large){
+            margin-bottom: 4.8125rem;
+            font-size: 0.8125rem;
+            width: 90%;
+        }
+        
+    }
+
+    
+}
